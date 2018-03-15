@@ -68,10 +68,7 @@ class acortadora(webapp.webApp):
 				else:
 					print(recurso)
 					codigo = "HTTP/1.1 404 Not Found"
-					respuesta = ("<html><body><h1>Recurso no encontrado.. </h1></body><meta http-equiv='Refresh' " +
-								 "content= 1;url=" +
-								  self.cortas['http://localhost:1245'+str(recurso)] +
-								  "></p></body></html>")
+					respuesta = ("<html><body><h1>Recurso no encontrado,vuelve a intentarlo </h1>/body></html>")
 
 
 		elif metodo == "POST":
